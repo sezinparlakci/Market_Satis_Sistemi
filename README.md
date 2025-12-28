@@ -7,39 +7,33 @@ Python ve PyQt5 kullanılarak geliştirilmiş, MongoDB tabanlı bir
 Market / POS (Point of Sale) satış uygulamasıdır.
 
 
+## 🚀 Özellikler
+- Kullanıcı giriş sistemi (Admin / Personel)
+- Barkod ile ürün ekleme
+- 📷 Kamera ile barkod okuma (OpenCV + pyzbar)
+- Stok takibi
+- Satış ve iade işlemleri
+- Nakit / Kart ödeme
+- Satış raporları
+- MongoDB veritabanı
 
-\## 🚀 Özellikler
-
-\- Kullanıcı giriş sistemi (Admin / Personel)
-
-\- Barkod ile ürün ekleme
-
-\- Kamera ile barkod okuma
-
-\- Stok takibi
-
-\- Satış ve iade işlemleri
-
-\- Nakit / Kart ödeme
-
-\- Satış raporları
-
-\- MongoDB veritabanı
-
+## 🧱 Kullanılan Teknolojiler
+- Python 3.12
+- PyQt5
+- MongoDB
+- OpenCV
+- pyzbar (Barcode / QR Code Reader)
+- Git & GitHub
 
 
-\## 🧱 Kullanılan Teknolojiler
+### Ana Satış Ekranı
+![Main Screen](images/resim1.png)
 
-\- Python 
+### Ürün Ekleme Ekranı
+![Insert Screen](images/resim2.png)
 
-\- PyQt5
-
-\- MongoDB
-
-\- OpenCV (kamera)
-
-\- Git \& GitHub
-
+### Son Satış Ekranı
+![LastSale Screen](images/resim3.png)
 
 
 \## ▶️ Kurulum
