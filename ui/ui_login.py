@@ -1,0 +1,38 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_LoginScreen(object):
+    def setupUi(self, LoginScreen):
+        LoginScreen.setObjectName("LoginScreen")
+        LoginScreen.resize(350, 250)
+        LoginScreen.setFixedSize(QtCore.QSize(350, 250))
+        self.verticalLayout = QtWidgets.QVBoxLayout(LoginScreen)
+        self.verticalLayout.setContentsMargins(40, 40, 40, 40)
+        self.verticalLayout.setSpacing(15)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.labelTitle = QtWidgets.QLabel(LoginScreen)
+        self.labelTitle.setAlignment(QtCore.Qt.AlignCenter)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setBold(True)
+        self.labelTitle.setFont(font)
+        self.labelTitle.setObjectName("labelTitle")
+        self.verticalLayout.addWidget(self.labelTitle)
+        self.lineUsername = QtWidgets.QLineEdit(LoginScreen)
+        self.lineUsername.setObjectName("lineUsername")
+        self.verticalLayout.addWidget(self.lineUsername)
+        self.linePassword = QtWidgets.QLineEdit(LoginScreen)
+        self.linePassword.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.linePassword.setObjectName("linePassword")
+        self.verticalLayout.addWidget(self.linePassword)
+        self.btnLogin = QtWidgets.QPushButton(LoginScreen)
+        self.btnLogin.setObjectName("btnLogin")
+        self.verticalLayout.addWidget(self.btnLogin)
+        self.retranslateUi(LoginScreen)
+        QtCore.QMetaObject.connectSlotsByName(LoginScreen)
+    def retranslateUi(self, LoginScreen):
+        _translate = QtCore.QCoreApplication.translate
+        LoginScreen.setWindowTitle(_translate("LoginScreen", "Kullanıcı Girişi"))
+        self.labelTitle.setText(_translate("LoginScreen", "SİSTEM GİRİŞİ"))
+        self.lineUsername.setPlaceholderText(_translate("LoginScreen", "Kullanıcı Adı"))
+        self.linePassword.setPlaceholderText(_translate("LoginScreen", "Şifre"))
+        self.btnLogin.setText(_translate("LoginScreen", "GİRİŞ YAP"))
